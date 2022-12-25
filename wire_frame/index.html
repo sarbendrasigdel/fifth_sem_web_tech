@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Zero</title>
+    <link rel="stylesheet" href="./style.css">
+<style>
+    /* tagname selector */
+    header{
+        background-color: yellowgreen;
+    }
+
+    /* using class selector */
+    .site-logo{
+        width: 29%;
+        display: block;
+    }
+    .main-nav{
+        width: 70%;
+    }
+    /* group selector */
+    .site-logo,.main-nav{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    /* common css */
+    .container{
+        max-width: 940px;
+        margin: 0 auto;
+    }
+
+</style>
+
+</head>
+
+<body>
+<header class="header">
+    <div class="container">
+<a href="/" class="site-logo" title="NCIT" style="font-size: 60px; color: green; text-decoration: none;"> logo</a>
+<nav class="main-nav">
+    <ul style="padding-left: 0; margin-top:0; margin-bottom: 0; list-style: none;">
+        <li style="display: inline-block;" class="active-page"> <a href="#" title="Home" style="color: red;text-decoration: none; font-size: 17px; text-transform: uppercase; padding: 12px;">Home</a> </li>
+        <li style="display: inline-block;"><a href="#" title="About" style="text-decoration: none; font-size: 17px; text-transform: uppercase; padding: 12px;  color: white;">About</a></li>
+        <li style="display: inline-block;"> <a href="#" title="Contact" style="text-decoration: none; font-size: 17px; text-transform: uppercase; padding: 12px;">Contact</a> </li>
+        <li style="display: inline-block;"> <a href="#" title="Blog" style="text-decoration: none; font-size: 17px; text-transform: uppercase; padding: 12px;">Blog</a> </li>
+        <li style="display: inline-block;"> <a href="#" title="FAQs" style="text-decoration: none; font-size: 17px; text-transform: uppercase; padding: 12px;">FAQs</a> </li>
+    </ul>
+</nav>
+</div>
+</header>
+
+
+<figure class="banner">
+<img src="./images/firstpp.jpeg" alt="NCIT Program">
+<figcaption class="banner__content">Dear Banner!</figcaption>
+</figure>
+<div class="sticky-data">
+    hello sticky position!
+</div>
+
+
+<section class="entry-block clear-fix">
+    <div class="entry-block_content">
+    <div class="entry-block_detail">
+        <h1 class="titlestyle1">Welcome to <strong>NCIT</strong> </h1>
+
+       <div class="entry-block_text">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint eaque recusandae
+             quos vitae, at odit, sed 
+            eum iusto repellendus, reiciendis quia repellat placeat nemo ut corrupti. 
+            Quos atque voluptatibus accusamus.</p>
+            <a href="#" title="Read More" class="button">Read More</a>
+        </div>
+    </div>
+
+</div>
+
+<div class="entry-block__table">
+    <table cellsapacing="0">
+        <thead>
+            <tr>
+                <th>S.N</th>
+                <th>Faculty</th>
+                <th>Success Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bsc.CSIT</td>
+                <td>+10000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>BCA</td>
+                <td>+7500</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>BIT</td>
+                <td>+5000</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="entry-block_image">
+
+        <img src="./images/image.jpg" alt="welcome to NCIT">
+
+    </div>
+</div>
+ 
+</section>
+
+
+<div class="gallery-box">
+    <div class="container">
+    <h2 class="gallery-box__title">Gallery</h2>
+
+<div class="gallery-box__data clearfix">
+<div class="gallery-box__item">
+    <a href="./images/g1.jpg"> <img src="./images/g1.jpg" alt="g1"/></a>
+</div>
+<div class="gallery-box__item">
+   <a href="./images/g2.jpg""> <img src="./images/g2.jpg" alt="g2"/></a>
+</div>
+<div class="gallery-box__item">
+  <a href="./images/firstpp.jpeg">  <img src="./images/firstpp.jpeg" alt="firstpp"/></a>
+</div>
+<div class="gallery-box__item">
+  <a href="./images/g2.jpg"> <img src="./images/g2.jpg" alt="g2"/></a> 
+</div>
+</div>
+</div>
+</div>
+
+<div class="faq-box">
+    <div class="container">
+<h2 class="titlestyle2">FAQs</h2>
+<dl class="accordion">
+    <dt>Question 1</dt>
+    <dd>
+        <p>heloo</p>
+    </dd>
+
+    <dt>Question 2</dt>
+    <dd>
+        <p>heloo</p>
+    </dd>
+
+    <dt>Question 3</dt>
+    <dd>
+        <p>heloo</p>
+    </dd>
+
+</dl>
+</div>
+</div>
+
+
+<div class="contact-block form-box">
+    <div class="container">
+    <h2 class="titlestyle2">Contact Us</h2>
+    <form action="#" method="post" name="contact">
+    
+        <div class="field-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" name="fullname" id="fullname" value="">
+        </div>
+        <div class="field-group">
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address" value="">
+        </div>
+
+        <div class="field-group">
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" id="phone" value="">
+        </div>
+
+        <div class="field-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" value="">
+        </div>
+        <div class="field-group">
+            <label for="message">message</label>
+            <input type="text" name="message" id="message" value="">
+        </div>
+        <div class="form-box_footer">
+            <button type="submit" name="submit" class="button">send message</button>
+        </div>
+    </form>
+</div>
+</div>
+<footer class="footer">
+    <div class="container">
+    <div class="footer__main"><h4> Quick Links</h4>
+        <ul class="quick-links">
+        <li> <a href="#" title="privacy policy"> privacy policy</a> </li>
+        <li> <a href="#" title="Terms &amp;Conditions">Terms &amp;Conditions</a> </li>
+        </ul>
+        <div class="footer__col">
+
+        </div>
+
+    </div>
+   
+<div class="footer__col frame-box">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.213262927563!2d85.32768641435783!3d27.679802782803325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19ca771e9e55%3A0xc94f84d1f057520f!2sNagarjuna%20College%20of%20IT!5e0!3m2!1sen!2snp!4v1669965071817!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+    <div class="footer__bottom">
+        <p>Copyright &copy;2022,All Rights Reserved </p>
+    </div>
+</div>
+</footer>
+<script src="./script.js" type="text/javascript" defer></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking form</title>
+    <style>
+        :root{
+            --primary-color:green;
+        }
+
+
+        *{
+            box-sizing: border-box;
+            
+        }
+        .required{
+            color: red;
+        }
+.booking-form{
+    max-width: 640px;
+    margin: 0 auto;
+    border: dashed 1px  var(--primary-color);
+}
+.booking-form ul{
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.booking-form label,
+.booking-form input,
+.booking-form textarea,
+.booking-form select
+{
+    width: 100%;
+    min-height: 32px;
+    padding:4px;
+    vertical-align: middle;
+
+}
+
+.booking-form label,
+.booking-form h4
+
+{
+    margin: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.booking-form input[type*="radio"],
+.booking-form input[type*="checkbox"]{
+    width: 18px;
+    height: 18px;
+}
+
+.booking-form input[type*="radio"]~label,
+.booking-form input[type*="checkbox"]~label{
+    text-transform: none;
+    font-weight: 400;
+}
+.booking-form input[type*="submit"],
+.booking-form input[type*="reset"]
+{
+    background-color: var(--primary-color);
+    width: auto;
+    height: auto;
+    padding: 10px 30px;
+    color: aliceblue;
+    text-transform: uppercase;
+
+
+}
+
+.booking-form input[type*="submit"]:hover,
+.booking-form input[type*="reset"]:hover{
+
+background-color:cyan;
+transition: .3s;
+
+
+}
+.booking-form h1{
+    background-color:var(--primary-color);
+    padding:10px;
+    margin: 0;
+    text-align: center;
+    text-transform:uppercase ;
+    font-size: 28px;
+    color: white;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="booking-form">
+    <h1>Booking form</h1>
+    <!-- form (Root Element)
+        Fields:
+         - input
+         - textarea
+         - select
+         Buttons:
+          - input type:submit
+          - button element
+          - Features: submit, reset
+          
+          Input types / Button types
+          - text,number,phone,email,date,radio,checkbox,password,submit,reset,file etc
+         -->
+         <form action="#" method="get" name="booking" enctype="multipart/form-data">
+            <ul>
+            <li>
+                <label for="fname"> <span class="required">*</span> fulllname: <br> </label>
+                <input type="text" name="fulllname" id="fname" placeholder="i.e: john smith" value="" required/>
+            
+            </li>
+
+            <li>
+                <label for="address" > Address: <br> </label>
+                <input type="text" name="address" id="address" placeholder="i.e: carlifornia,USA" value=""/>
+             
+            </li>
+            <li>
+                <label for="phone"> <span class="required">*</span> Phone: <br> </label>
+                <input type="phone" name="phone" id="phone" placeholder="enter your phone number" value="" required/>
+            
+            </li>
+            <li>
+                <label for="email"> <span class="required">*</span> Email: <br> </label>
+                <input type="email" name="email" id="email" placeholder="enter your email" value="" required />
+            
+            </li>
+            <li> <h4>Select Gender</h4>
+               
+                <input type="radio" name="gender" value="Male" id="male">
+                <label for="male"> Male</label>
+                
+                <input type="radio" name="gender" value="Female" id="female">
+                <label for="female"> Female</label>
+                
+                <input type="radio" name="gender" value="Other" id="other">
+                <label for="other">Other</label>
+            </li>
+            <li> <h4>Choose Services</h4>
+                
+                <input type="checkbox" name="services" value="hotel" id="hotel">
+                <label for="male"> hotel</label>
+                
+                <input type="checkbox" name="services" value="vehicle" id="vehicle">
+                <label for="female"> vehicle</label>
+                
+                <input type="checkbox" name="services" value="air-ticketing" id="airtkt">
+                <label for="airtkt">air-ticketing</label>
+        
+            </li>
+            <li>
+            <label for="feedback" > Feedback: <br> </label>
+                <textarea name="message" id="feedback" cols="30" rows="10"></textarea>
+            
+            </li>
+
+       
+
+
+<li>
+<select name="customer_type">
+    <option >choose customer type</option>
+    <option value="Basic">Basic</option>
+    <option value="Premium">Premium</option>
+</select>
+</li>
+
+<li>
+<label for="photo"> Photo</label>
+<input type="file" name="photo" id="photo">
+</li>
+
+
+
+</ul>
+<div class="form-footer">
+    <input type="submit" value="Send" name="submit">
+    <input type="reset" value="Reset Form" name="reset">
+
+</div>
+
+
+         </form>
+</div>
+    
+</body>
+</html>

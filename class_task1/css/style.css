@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* style for navbar */
+
+h2 a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rosybrown;
+}
+
+.container{
+    padding: 20px;
+    background-color: navy;
+}
+
+
+
+.main_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+
+
+.main_nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+
+}
+.main_nav ul a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+
+/* intro section */
+.intro_image{
+    margin: 30px 0;
+}
+
+.intro_image img{
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
+h1{
+text-transform: uppercase;
+color: maroon;
+}
+
+.intro_text p{
+font-size: 21px;
+line-height: 25px;
+
+}
