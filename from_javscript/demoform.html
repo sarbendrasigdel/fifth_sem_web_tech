@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .error{
+        font-size: 13px;
+        color: red;
+        display: block;
+        font-style: italic;
+
+    }
+    form{
+        border: 1px solid green;
+        box-shadow: 0 0 22px rgba(0, 0, 0, 0.2) ;
+        max-width:480px;
+        margin: 40px auto;
+        padding: 20px;
+    }
+    .form-fields{
+        padding-top: 6px;
+        padding-bottom: 6px;
+    
+    }
+form label{
+    font-weight: 700;
+}
+input,
+textarea,
+select{
+    width: 100%;
+    padding: 10px 30px;
+    border: 1px solid #f2f2f2;
+}
+
+[type*="submit"],
+[type*="reset"]{
+    border: 0;
+    background-color: green;
+    width: auto;
+    border-radius: 10px;
+    padding: 12px 40px;
+    color: bisque;
+    cursor: pointer;
+    transition:.3s;
+}
+[type*="submit"]:hover,
+[type*="reset"]:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+</style>
+
+
+</head>
+<body>
+    <form action="#" method="post" name="demo_form">
+
+        <div class="form-fiels">
+<label for="fname">name</label>
+<input type="text" name="fname" id="fname" value="">
+<span class="error"></span>
+</div>
+
+<div class="form-fiels">
+<label for="address">Address</label>
+<input type="text" name="Address" id="Address" value="">
+<span class="error"></span>
+</div>
+
+<div class="form-fiels">
+<label for="email">email</label>
+<input type="text" name="email" id="email"  value="">
+<span class="error"></span>
+</div>
+
+<div class="form-fiels">
+    <label for="passwowrd">password</label>
+    <input type="password" name="password" id="password" value="" >
+    <span class="error"></span>
+    </div>
+
+    <div class="form-fiels">
+        <label for="cpwd">confirm password</label>
+        <input type="password" name="cpwd" id="cpwd" value="">
+        <span class="error"></span>
+        </div>
+
+        <div class="btn-group">
+           <input type="submit" name="submit"  value="send">
+         <input type="reset" name="reset"  value="reset">
+            </div>
+
+    <script>
+        let fname=document.getElementById("fname");
+        let addr = document.getElementById("Address");
+        let email= document.getElementById("email");
+        let pwd = document.getElementById("password");
+        let cpwd = document.getElementById("cpwd");
+
+//checking conditions
+
+fname.addEventListener("keydown",()=>{
+    console.log(fname.value.length);
+if(fname.value.length <= 3)
+{
+    fname.nextElementSibling.innerHTML="fullname must be atleast 3 character";
+
+}
+else
+{
+    fname.nextElementSibling.innerHTML="";
+}
+
+})
+
+addr.addEventListener("keyup",()=>{
+    console.log(addr.value.length);
+if(addr.value.length <= 3)
+{
+    addr.nextElementSibling.innerHTML="Address must be atleast 3 character";
+
+}
+else
+{
+    addr.nextElementSibling.innerHTML="";
+}
+
+})
+
+email.addEventListener("keydown",()=>{
+    console.log(email.value.length);
+if(email.value.length <=6 )
+{
+    email.nextElementSibling.innerHTML="email is too short";
+
+}
+else
+{
+    email.nextElementSibling.innerHTML="";
+
+    if(email.value.indexOf(".")!=email.value.indexOf("@")+1 ){
+        email.nextElementSibling.innerHTML="invalid email";
+    }
+    else{
+        email.nextElementSibling.innerHTML="";
+    }
+
+    if(email.value.indexOf("@")==email.value.indexOf(".")+1 ){
+        email.nextElementSibling.innerHTML="invalid email";
+    }
+    else{
+        email.nextElementSibling.innerHTML="";
+    }
+
+
+
+    if(email.value.indexOf("@")!=email.value.indexOf("@") ){
+        email.nextElementSibling.innerHTML="invalid email";
+        
+    }
+    else{
+        email.nextElementSibling.innerHTML="";
+    }
+
+
+    
+    if((email.value.indexOf("@")==-1)||(email.value.indexOf(".")==-1 )){
+        email.nextElementSibling.innerHTML="invalid email";
+    }
+
+    else{
+        email.nextElementSibling.innerHTML="";
+    }  
+}
+})
+
+pwd.addEventListener("keyup",()=>{
+    console.log(pwd.value.length);
+if(pwd.value.length <= 3)
+{
+    pwd.nextElementSibling.innerHTML="password must be atleast 4 character";
+
+}
+else
+{
+    pwd.nextElementSibling.innerHTML="";
+}
+
+})
+
+cpwd.addEventListener("keyup",()=>{
+    console.log(cpwd.value.length);
+if(pwd.value != cpwd.value)
+{
+    cpwd.nextElementSibling.innerHTML=" password donot match";
+
+}
+else
+{
+    cpwd.nextElementSibling.innerHTML="";
+}
+
+})
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+    </form>
+</body>
+</html>

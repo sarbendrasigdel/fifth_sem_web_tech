@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+.bill-form{
+    max-width: 800px;
+    margin: 0 auto;
+}
+header{
+max-width: 800px;
+padding: 10px;
+margin: 0 auto;
+background-color: #ff5733;
+}
+.bill-head table{
+    width: 100%;
+    background-color: #f2f2f2;
+}
+.bill-head h2{
+    margin-top: 0;
+    display: inline;
+}
+
+.bill-head  ul,
+.client-info ul,
+.bill-table ul{
+    list-style: none;
+}
+.main-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+
+}
+h4{
+    text-transform: uppercase;
+}
+.bill-table p{
+    text-transform: uppercase;
+}
+footer{
+    padding: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ff5733;
+}

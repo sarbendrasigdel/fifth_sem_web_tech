@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+  }
+  .registration-form{
+    margin: 0 auto;
+    width: 900px;
+  }
+  .registration-form h1{
+    color:  rgb(255, 86, 86);
+  }
+  .fieldset{
+    padding: 6px 50px 6px 20px;  
+  }
+  legend{
+    text-align: center;
+  }
+  li{
+    margin: 0 auto;
+    padding: 6px;
+    list-style: none;
+    border: 1px;
+    border-style: solid;
+    
+  }
+  .registration-form ul{
+    border: 1px;
+  }
+  .clear-btn{
+    background-color: #f8385e;
+    border: none;
+    color: white;
+    padding: 8px;
+  }
+  .register-btn{
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 8px;
+  }
+  .male{
+    font-size: 20px
+  }
+  .female{
+    font-size: 20px;
+  }
+  input{
+    padding: 6px;
+    border-color:#808080 ;
+    outline: none;
+  }
+  #name{
+    width: 600px;
+  }
+  #address{
+    width: 600px;
+  }
+  #phone{
+    width: 600px;
+  }
+  label{
+    padding: 6px 80px 80px 6px;
+  }
+  select{
+    border-color: #808080;
+    width: 600px;
+    height: 30px;
+  }
+  .address{
+    padding-right: 67px;
+  }
+  textarea{
+    border-color: #808080;
+    width: 600px;
+    height: 60px;
+  }

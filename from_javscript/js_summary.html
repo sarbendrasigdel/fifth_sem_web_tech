@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js summary</title>
+</head>
+<body>
+    
+<script>
+    document.cookie="name=sarbendra,age=23,address=ktm";
+    console.log(document.cookie);
+</script>
+
+<!-- js library
+Resource as CDN (content Deleviry Network) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" 
+integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" 
+crossorigin="anonymous"></script>
+
+<button id="btn">Click me</button>
+<button class="btn">Click class button</button>
+<div class="box" style="position: relative; width: 40px; height:40px; background-color: red;"></div>
+<div class="info-box">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quos.</p>
+</div>
+<button class="btn-hide">Hide content</button>
+<button class="btn-show">Show Content</button>
+<button class="btn-toggle">Toggle content</button>
+
+<script>
+
+var infoBox=$(".info-box");
+$(".btn-hide").on('click',()=>{
+    infoBox.slideUp(300);
+});
+
+$(".btn-show").on('click',()=>{
+    infoBox.slideDown(300);
+});
+
+$(".btn-toggle").on('click',()=>{
+    infoBox.slideToggle(500);
+    infoBox.toggleClass("hidden");
+});
+
+
+    // var btn =$("#btn");
+    var btn = jQuery("#btn");
+    var btnCls=$(".btn")
+    console.log(btn);
+
+btn.on("click",()=>{
+    console.log("Button clicked");
+    jQuery(".box").animate({zoom:2,left:"100px"});
+    jQuery(".box").css({"background-color":"blue","border":"2px dashed yellow"});
+    
+});
+btnCls.on("mouseover",()=>{
+    console.log("button class clicked");
+    jQuery(".box").css("background-color","purple");
+})
+
+
+
+</script>
+
+</body>
+</html>

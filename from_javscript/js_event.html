@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="info-box">
+        <img src="./binary.jpg" alt="" style="height: 70px; width: 70px;">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <script>
+        let infoImg = document.querySelector(".info-box img");
+        infoImg.addEventListener("mouseover", () => {
+            infoImg.nextElementSibling.innerHTML = "test";
+        })
+
+        infoImg.addEventListener("mouseout", () => {
+            infoImg.nextElementSibling.innerHTML = "testsdf";
+        })
+
+/* js objects
+
+-user defined objects
+*/
+let userInfo={name:"sarbendra sigdel", age:22, };
+console.log(userInfo.name);
+console.log(userInfo.age);
+
+
+    </script>
+
+
+</body>
+</html>

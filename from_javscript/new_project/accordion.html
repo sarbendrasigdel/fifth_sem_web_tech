@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .data-box{
+            border: 1px solid green;
+            max-width: 600px;
+            margin: 90px  auto;
+            padding: 20px;
+        }
+        .data-box ul,
+        .data-box ol{
+            padding-left: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            list-style: none;
+        }
+
+        .data-box li{
+            border-top: 1px dashed rgba(0,0,0,0.4);
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        .data-box li:first-of-type{
+            border-top: 0;
+        }
+
+        .accordion dt{
+            background-color: greenyellow;
+            padding: 10px 15px;
+            margin-top: 4px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: .3s;
+        }
+        .accordion dt:hover{
+            background-color: green;
+            color: white;
+        }
+
+        .accordion dd{
+            display: none;
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin: 0;
+        }
+        .accordion dd:first-of-type{
+            display: block;
+        }
+
+
+
+
+        .form-box input,
+        .form-box textarea{
+            width: 100%;
+            padding: 6px 12px;
+        }
+        .form-box textarea{
+            min-height: 80px;
+        }
+        .form-box__footer [type*="submit"]{
+            background-color: yellowgreen;
+            padding:12px 36px;
+            text-transform: uppercase;
+            color: white;
+            font-weight: 700;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .form-box__footer [type*="submit"]:hover
+        {
+            background-color: green;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="data-box">
+        <div class="data-box__head">
+            <h1>BscCSIT program</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur error 
+                sequi qui magni quia, velit officia quo 
+                amet omnis quibusdam nobis natus soluta, voluptatem enim, 
+                voluptatum possimus. Fugit, debitis nobis!</p>
+        </div>
+        <div class="data-box__content">
+            <dl class="accordion">
+                <dt>Overvivew</dt>
+                <dd class="detail-data"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia mollitia maiores atque repellendus eligendi nesciunt libero voluptates enim unde consequuntur laborum magni repellat fuga ex, error debitis? Magnam, similique sequi?</p></dd>
+            <dt>micro syallabus of <strong>web technology</strong>  </dt>
+
+            <dd class="detail-data">
+                <ul>
+                    <li>course overview</li>
+                    <li>programming methodologies</li>
+                    <li>javascript</li>
+                    <li>xml</li>
+                    <li>serverside</li>
+                </ul>
+            </dd>
+            <dt>FAqs</dt>
+            <dd class="detail-data">
+            <ol>
+                <li>
+                    <h3>question1?
+                    </h3>
+                    <div class="text-box">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, assumenda?</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>question2?
+                    </h3>
+                    <div class="text-box">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, assumenda?</p>
+                    </div>
+                </li>
+            </ol>
+        </dd>
+        <dt>Inquiry</dt>
+        <dd class="detail-data">
+            <h2>Inquiry Now</h2>
+              <ul>
+                <li>
+                    <label for="fname">Fullname</label>
+                    <input type="text" name="fullname" id="fname">
+                </li>
+                <li>
+                    <label for="contact">Contact</label>
+                    <input type="text" name="contact" id="contact">
+                </li>
+                <li>
+                    <label for="fname">message</label>
+                    <textarea name="message" id="msg" cols="30" rows="10">Send message</textarea>
+                </li>
+              </ul>
+              <div class="form-box__footer">
+                <button type="submit" name="submit">Send Message</button>
+              </div>
+            </form>
+        </dd>
+            </dl>
+        </div>
+    </div>
+
+    <script>
+        let dt = document.querySelectorAll('dt');
+        dt.forEach(title => {//console.log(title);
+        title.addEventListener("click",() =>
+        {
+            //console.log(title.nextElementSibling);
+            let dtparent= title.parentElement;
+
+
+
+        
+        const allSiblings=//title.parentElement.children;
+         Array.form(title.parentElement.children);
+        allSiblings.forEach(ch =>{
+            console.log(ch.classList.value)
+            if(ch.classList.value == 'detail-data'){
+                ch.style.display="none";
+            }
+        })
+        title.nextElementSibling.style.display="block";
+    })
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- simple type -->
+<!-- <userInfo>User</userInfo> -->
+
+<!-- complex type-->
+
+<userInfo
+ xmlns="http://127.0.0.1:5500/xml"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://127.0.0.1:5500/xml/data.xsd"
+>  
+<user id="1">
+<name>  sarbendra sigdel</name>
+<address> thankot,kathmandu </address>
+<phone> +977 9860672399 </phone>
+</user>
+
+<user id="2">
+<name>  karan magar </name>
+<address> thankot,kathmandu </address>
+<phone> +977 987575399 </phone>
+</user>
+
+<user id="3">
+<name>  salin lama</name>
+<address> checkpost,kathmandu </address>
+<phone> +977 98674752399 </phone>
+</user>
+
+</userInfo>

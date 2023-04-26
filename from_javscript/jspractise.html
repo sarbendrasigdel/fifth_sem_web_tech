@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h2> functions of js</h2>
+
+    <!-- <script>
+  // es5 function
+
+  function funcName(expressions){
+    /*
+
+
+    expression leads parameter
+    statements
+    
+    */
+  }
+
+// functions
+
+const addNum =()=>{
+    let n1 = prompt("enter number 1: ");
+    let n2 = prompt("enter number 2: ");
+    console.log(n1+n2);
+
+    let sum = confirm(parseInt(n1)+parseInt(n2));
+    console.log(sum);
+
+    if (sum==true){
+        alert("sum ecxecuted");
+
+    }
+    else{
+        alert("sum cancelled");
+    }
+}
+addNum();
+    </script> -->
+
+    <script>
+        /* 
+        
+        */
+
+let user =["yubaraj","sarbendra","sudeep"];
+let userInfo= Array("sarbendra",22,true);
+
+/*
+- array meeethods:
+-push/pop
+-shift/unshift
+-indexOf
+
+-properties
+-length
+*/
+
+console.log(user);
+
+user.pop();
+console.log(user);
+
+user.push("raj");
+console.log(user);
+
+console.log(userInfo.indexOf("sarbendra"));
+console.log(userInfo.indexOf(22));
+
+console.table(Array.from("sarbendra"));
+
+user[0] = "rai";
+console.log(user);
+
+user.shift();
+console.log(user);
+
+user.unshift("new data");
+console.log(user);
+    </script>
+
+<h2>js objects</h2>
+
+<div id="date-time"></div>
+
+<script>
+    /*
+    -bilt-in library object
+    -user defined object
+    */
+setInterval(()=>{
+
+let date = new Date;
+let day = date.getDay();
+let month = date.getMonth();
+
+let year = date.getFullYear();
+let hours = date.getHours();
+
+let minutes = date.getMinutes();
+
+
+let seconds = date.getSeconds();
+
+
+
+let dateTime = document.getElementById("date-time");
+dateTime.innerHTML = `${day}  -${month} - ${ year}  ${hours}: ${minutes}: ${seconds} `;
+
+// day  + "-" + month + "-" + year +" "+ hours+ ":" + minutes + ":" + seconds;
+
+},1000);
+
+</script>
+
+
+</body>
+</html>

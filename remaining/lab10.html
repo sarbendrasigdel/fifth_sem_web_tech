@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Example Page</title>
+ <style>
+ *{
+ scale: 100%;
+ margin: 0 auto;
+ padding: 0;
+ }
+ img{
+ height: 50px;
+ width: 270px;
+ }
+ </style>
+</head>
+<body>
+<header>
+<h1>Page Title</h1>
+<nav>
+<a href="/">Home</a>
+<a href="/about">About</a>
+</nav>
+</header>
+<main>
+<section>
+<h2>Section Title</h2>
+<p>Section content goes here</p>
+<figure>
+<img src="./image.jpg" alt="Image description">
+<figcaption>MyYoutubeChannel</figcaption>
+</figure>
+</section>
+<section>
+<h2>Audio Example</h2>
+<audio controls src="song.mp3"></audio>
+</section>
+<section>
+<h2>Video Example</h2>
+<video controls src="video.mp4"></video>
+</section>
+<section>
+<h2>Canvas Example</h2>
+<canvas id="myCanvas" width="200" height="100" style="background-color: brown;"></canvas>
+</section>
+</main>
+<aside>
+<p>Related content goes here</p>
+</aside>
+<footer>
+<p>Copyright information goes here</p>
+</footer>
+<script>
+// Add event listener for keyboard events
+document.addEventListener("keydown", function(event) {
+alert("Key pressed!");
+});
+// Add event listener for mouse events
+var button = document.querySelector("button");
+button.addEventListener("click", function(event) {
+alert("Button clicked!");
+});
+</script>
+</body>
+</html>

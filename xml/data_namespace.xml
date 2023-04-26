@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+
+
+
+<persondata
+xmlns:data1st="http://data.com/data1st"
+xmlns:data2nd="http://data.com/data2nd"
+>
+<data1st:user id="1">
+<name>  sarbendra sigdel</name>
+<address> thankot,kathmandu </address>
+<phone> +977 9860672399 </phone>
+</data1st:user>
+
+<data2nd:user id="2">
+ <name>  karan magar </name>
+<address> thankot,kathmandu </address>
+<phone> +977 987575399 </phone>
+</data2nd:user>
+
+
+
+    </persondata>

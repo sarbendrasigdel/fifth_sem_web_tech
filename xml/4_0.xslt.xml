@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="style.css" type="text/css"?>
+
+
+
+<userInfo>  
+    <user id="1">
+    <name>  sarbendra sigdel</name>
+    <address> thankot,kathmandu </address>
+    <phone> +977 9860672399 </phone>
+    </user>
+    
+    <user id="2">
+    <name>  karan magar </name>
+    <address> thankot,kathmandu </address>
+    <phone> +977 987575399 </phone>
+    </user>
+    
+    <user id="3">
+    <name>  salin lama</name>
+    <address> checkpost,kathmandu </address>
+    <phone> +977 98674752399 </phone>
+    </user>
+    
+    </userInfo>

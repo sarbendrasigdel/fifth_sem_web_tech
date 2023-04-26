@@ -1,0 +1,8 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://127.0.0.1:5500/xml"
+xmlns="http://127.0.0.1:5500/xml"
+elementFormDefault="qualified"
+>
+
+<xsd:element name="user" type="xsd:string"/>
+</xsd:schema>

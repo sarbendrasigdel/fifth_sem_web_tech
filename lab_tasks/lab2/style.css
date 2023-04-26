@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+}
+h2 a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: navy;
+    padding: 20px;
+    
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 20px 20px; */
+    
+}
+.home,.about,.services,.gallery,.contact{
+    padding: 0 15px;
+    /* margin: 10px 20px; */
+}
+
+.links a{
+    text-decoration: none;
+    color: aliceblue;
+}

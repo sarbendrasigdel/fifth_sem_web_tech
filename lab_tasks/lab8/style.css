@@ -1,0 +1,50 @@
+
+.header{
+    grid-area: header;
+    background-color: aqua;
+    padding: 30px;
+    text-align: center;
+
+}
+.left-box{
+    grid-area: left;
+    background-color: brown;
+    padding: 120px;
+    
+}
+.article-detail{
+    grid-area: detail;
+    background-color: yellow;
+    padding: 120px;
+}
+.right-box{
+    grid-area: right;
+    background-color:blue;
+    padding: 120px;
+
+}
+.footer{
+    grid-area: footer;
+    background-color: red;
+    padding: 20px;
+}
+
+.menu{
+    grid-area: menu;
+    background-color: grey;
+    padding: 20px;
+}
+
+
+
+.section{
+    display: grid;
+grid-template-areas: 'header header header header header header '
+'menu menu menu menu menu menu'
+'left detail detail detail detail right' 'footer footer footer footer footer footer';
+
+
+
+
+
+}
